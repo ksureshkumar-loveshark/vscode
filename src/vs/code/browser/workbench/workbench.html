@@ -30,6 +30,45 @@
 	</head>
 
 	<body aria-label="">
+		<div
+			id="kaushik-startup-overlay"
+			style="
+				position: fixed;
+				inset: 0;
+				background: white;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+				z-index: 1000;
+			"
+		>
+			<h1
+				style="
+					margin-bottom: 16px;
+					font-size: 32px;
+					font-weight: 500;
+					color: #111;
+				"
+			>
+				Kaushik's app
+			</h1>
+			<button
+				style="
+					padding: 8px 16px;
+					font-size: 14px;
+					border-radius: 4px;
+					border: 1px solid #ccc;
+					background: #0078d4;
+					color: white;
+					cursor: pointer;
+				"
+				onclick="document.getElementById('kaushik-startup-overlay').style.display = 'none';"
+			>
+				Take Me To VS Code
+			</button>
+		</div>
 	</body>
 
 	<!-- Startup (do not modify order of script tags!) -->
