@@ -538,6 +538,13 @@ export class CodeApplication extends Disposable {
 			}
 		});
 
+		validatedIpcMain.on('vscode:openFolder', async event => {
+			const window = this.windowsMainService?.getWindowByWebContents(event.sender);
+			if (window) {
+				await this.nativeHostMainService?.pickFolderAndOpen(window.id, { forceNewWindow: false });
+			}
+		});
+
 		//#endregion
 	}
 

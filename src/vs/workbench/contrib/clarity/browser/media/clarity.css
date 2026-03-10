@@ -1,0 +1,155 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+/* File tree */
+.clarity-file-tree {
+	height: 100%;
+	overflow: auto;
+}
+
+.clarity-file-item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 0 12px;
+	height: 28px;
+	cursor: pointer;
+}
+
+.clarity-file-icon {
+	flex-shrink: 0;
+	font-size: 14px;
+	width: 16px;
+	text-align: center;
+}
+
+.clarity-file-label {
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 13px;
+}
+
+/* Editor pane */
+.clarity-editor {
+	height: 100%;
+	overflow: auto;
+	background-color: var(--vscode-editor-background);
+}
+
+.clarity-editor-content {
+	height: 100%;
+	overflow: auto;
+}
+
+.clarity-markdown-body {
+	padding: 24px 48px;
+	max-width: 900px;
+	margin: 0 auto;
+	line-height: 1.7;
+	font-size: 15px;
+	color: var(--vscode-editor-foreground);
+}
+
+.clarity-markdown-content h1 {
+	font-size: 2em;
+	font-weight: 600;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid var(--vscode-editorWidget-border, rgba(128, 128, 128, 0.2));
+}
+
+.clarity-markdown-content h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.clarity-markdown-content h3 {
+	font-size: 1.25em;
+	font-weight: 600;
+	margin-top: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+.clarity-markdown-content p {
+	margin-bottom: 1em;
+}
+
+.clarity-markdown-content ul,
+.clarity-markdown-content ol {
+	padding-left: 1.5em;
+	margin-bottom: 1em;
+}
+
+.clarity-markdown-content li {
+	margin-bottom: 0.25em;
+}
+
+.clarity-markdown-content blockquote {
+	margin: 0 0 1em 0;
+	padding: 0.5em 1em;
+	border-left: 3px solid var(--vscode-textBlockQuote-border, #0078d4);
+	background: var(--vscode-textBlockQuote-background, rgba(0, 120, 212, 0.05));
+}
+
+.clarity-markdown-content pre {
+	padding: 16px;
+	border-radius: 6px;
+	overflow-x: auto;
+	margin-bottom: 1em;
+	background: var(--vscode-textCodeBlock-background);
+}
+
+.clarity-markdown-content code {
+	font-family: var(--monaco-monospace-font);
+	font-size: 0.9em;
+}
+
+.clarity-markdown-content p code {
+	padding: 2px 6px;
+	border-radius: 3px;
+	background: var(--vscode-textCodeBlock-background);
+}
+
+.clarity-markdown-content img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.clarity-markdown-content table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.clarity-markdown-content th,
+.clarity-markdown-content td {
+	padding: 8px 12px;
+	border: 1px solid var(--vscode-editorWidget-border, rgba(128, 128, 128, 0.2));
+	text-align: left;
+}
+
+.clarity-markdown-content th {
+	font-weight: 600;
+	background: var(--vscode-editorWidget-background);
+}
+
+/* Plain text / YAML / TXT rendering */
+.clarity-plaintext {
+	padding: 24px 48px;
+	max-width: 900px;
+	margin: 0 auto;
+	font-family: var(--monaco-monospace-font);
+	font-size: var(--editor-font-size);
+	line-height: 1.6;
+	color: var(--vscode-editor-foreground);
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	tab-size: 4;
+}
